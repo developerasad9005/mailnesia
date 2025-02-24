@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protection</title>
+    <link rel="stylesheet" href="pass.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="login-container">
+        <h2>Please enter the password to continue</h2>
+        <form id="login-form">
+            <input type="password" id="password" placeholder="Enter Password" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="error-message" style="color: red; display: none;">Incorrect Password! Please try again.</p>
+    </div>
+
+    <div id="website-content" style="display: none;">
+        <h1>Welcome to my Tools!</h1>
+        <div class="main">
+            <div class="container">
+                <h2>Bulk Email and Password Generator</h2>
+                
+                <label for="nameInput">Enter Names (First Name and Last Name) separated by commas (e.g., John Doe):</label>
+                <textarea id="nameInput" rows="5" placeholder="Enter names separated by commas..." required></textarea>
+                
+                <button id="generateButton">Generate Emails and Passwords</button>
+            </div>
+            <div id="result">
+                <h3>Generated Emails and Passwords:</h3>
+                <table id="resultTable">
+                    <thead>
+                        <tr>
+                            <th>Password</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Results will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <p>&copy; 2025 Developer Asad. All rights reserved.</p>
+    </div>
+    
+    <script src="pass.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
