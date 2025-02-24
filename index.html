@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email and Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h2>Bulk Email and Password Generator</h2>
+            
+            <label for="nameInput">Enter Names (First Name and Last Name) separated by commas (e.g., John Doe):</label>
+            <textarea id="nameInput" rows="5" placeholder="Enter names separated by commas..." required></textarea>
+            
+            <button id="generateButton">Generate Emails and Passwords</button>
+        </div>
+        <div id="result">
+            <h3>Generated Emails and Passwords:</h3>
+            <table id="resultTable">
+                <thead>
+                    <tr>
+                        <th>Password</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Results will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
